@@ -22,7 +22,7 @@
 
 // ** Thiết lập MySQL - Bạn có thể lấy các thông tin này từ host/server ** //
 /** Tên database MySQL */
-define( 'DB_NAME', 'gowatch' );
+define( 'DB_NAME', 'hangxachtayuytin' );
 
 /** Username của database */
 define( 'DB_USER', 'root' );
