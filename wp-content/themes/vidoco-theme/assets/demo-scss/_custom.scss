@@ -416,6 +416,9 @@ header{
 			.box-item-sl-img{
 				float: left;
 				width: 22%;
+				@media(max-width: 1024px){
+					width: 20%;
+				}
 			}
 			.box-item-sl-info{
 				float: left;
@@ -493,11 +496,14 @@ header{
 				position:relative;
 				@media(max-width: 740px){
 					border-radius: 255px;
-					padding: 75px;
+					padding:80px;
 				}
 				@media(max-width: 375px){
 					border-radius: 172px;
-					padding: 100px;
+					padding: 70px;
+				}
+				@media(max-width: 320px){
+					padding: 60px;
 				}
 				.sale-off-box{
 					position: absolute;
@@ -1022,21 +1028,37 @@ footer{
 		.box-news-list{
 			padding-top: 40px;
 			.box-news-item{
+				@media(max-width: 740px){
+					margin-bottom: 50px;
+				}
 				.box-news-item-1{
 					width: 50%;
-					float: left
+					float: left;
+					@media(max-width: 740px){
+						width: 100%;
+						float: none;
+					}
 				}
 				.box-news-item-2{
 					width: 50%;
 					float: left;
 					padding: 30px;
+					@media(max-width: 740px){
+						width: 100%;
+						float: none;
+						padding:30px 0 30px 0;
+					}
 					.box-news-information{
 						.box-news-information-title{
+							line-height: 30px;
 							a{
 								font-size: 20px;
 								text-transform: uppercase;
 								font-family: $f_bold;
 								color: $mau;
+								@media(max-width: 320px){
+									font-size: 15px;
+								}
 								&:hover{
 									color: $mau_1;
 								}
@@ -1841,6 +1863,33 @@ footer{
 		display: none;
 		@media(max-width: 1024px){
 			display: block;
+		}
+		table{
+			width: 100%;
+			border-collapse: collapse;
+			thead{
+				tr{
+					th{
+						padding:5px;
+					}
+					&:nth-of-type(even){
+						background: #f1f1f1
+					}
+				}
+			}
+			tbody{
+				tr{
+					td{
+						padding:5px;
+						.product-detail-tskt-label{
+							font-family: $f_bold;
+						}
+					}
+					&:nth-of-type(even){
+						background: #f1f1f1
+					}
+				}
+			}
 		}
 	}
 	.breadcrumbs-lazer{

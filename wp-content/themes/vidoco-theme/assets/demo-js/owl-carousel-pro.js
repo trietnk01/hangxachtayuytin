@@ -29,14 +29,14 @@ jQuery(document).ready(function(){
         responsiveClass:true,
         responsive:{
             240:{
-                items:1,
+                items:2,
                 autoplay:true,
                 nav:false,
-                margin :0,
+                margin :40,
             },
             320:{
                 items:2,
-                margin:100,
+                margin:60,
                 autoplay:true,
                 nav:false,
             },

@@ -200,7 +200,7 @@ if($the_query_y_kien->have_posts()){
  <form class="frmsearcharticle" name="frm_search_article" method="POST">
   <div class="vatimkiem"><input value="" name="s" type="search" placeholder="Tìm kiếm" class="txt_search" autocomplete="off"></div>
   <div class="btnsearch">
-    <a href="javascript:void(0);" onclick="document.forms['frm_search_article'].submit();"><img src="<?php echo get_template_directory_uri()."/assets/images/search-w.svg"; ?>" /></a>
+    <a href="javascript:void(0);" onclick="document.forms['frm_search_article'].submit();"><img src="<?php echo get_template_directory_uri()."/assets/images/search-w.svg"; ?>" alt="<?php echo get_bloginfo( 'name','raw' ); ?>" /></a>
   </div>
 </form>
 </div>
