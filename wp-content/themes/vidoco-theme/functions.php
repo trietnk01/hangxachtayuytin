@@ -30,28 +30,6 @@ function datetimeConverter($date,$format_to){
 	return $result;
 }
 // end datetime converter
-// start ddsmoothmenu
-add_action('wp_head', 'add_code_ddsmoothmenu');
-function add_code_ddsmoothmenu(){
-	$chuoi= '
-	<script type="text/javascript" language="javascript">
-	ddsmoothmenu.init({
-       mainmenuid: "smoothmainmenu",
-       orientation: "h",
-       classname: "ddsmoothmenu",
-       contentsource: "markup"
-       });
-       ddsmoothmenu.init({
-           mainmenuid: "smoothmainmenumobile",
-           orientation: "h",
-           classname: "ddsmoothmobile",
-           contentsource: "markup"
-           });
-           </script>
-           ';
-           echo $chuoi;
-       }
-// end ddsmoothmenu
        /* begin str_slug */
        function str_slug( $filename ) {
     $sanitized_filename = remove_accents( $filename ); // Convert to ASCII

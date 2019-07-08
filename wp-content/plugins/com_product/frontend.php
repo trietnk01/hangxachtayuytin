@@ -30,6 +30,12 @@ class Frontend{
 				return $file;
 			}
 		}
+		if(get_query_var('za_category_national_item') != ''){
+			$file = PLUGIN_PATH  . "templates" . DS . "frontend" . DS . 'za-category.php';
+			if(file_exists($file)){
+				return $file;
+			}
+		}
 		if(get_query_var('zaproduct') != ''){
 			$file = PLUGIN_PATH  . "templates" . DS . "frontend" . DS . 'zaproduct.php';
 			if(file_exists($file)){

@@ -174,4 +174,18 @@ jQuery(document).ready(function($) {
 	/* begin remove width - height attr */
 	$("div.tab > button.tablinks:first-child").addClass('active');
 	$($("div.tabcontent")[0]).css("display","block");
+	/* begin ddsmoothmenu */
+	ddsmoothmenu.init({
+		mainmenuid: "smoothmainmenu",
+		orientation: "h",
+		classname: "ddsmoothmenu",
+		contentsource: "markup"
+	});
+	ddsmoothmenu.init({
+		mainmenuid: "smoothmainmenumobile",
+		orientation: "h",
+		classname: "ddsmoothmobile",
+		contentsource: "markup"
+	});
+	/* end ddsmoothmenu */
 });
